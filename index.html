@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBook | Namma Veettu Samayal</title>
+  <meta name="description" content="Discover traditional Tamil recipes and get cooking help with TasteBook.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#">🍲 TasteBook</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#assistant">AI Samayal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">நம்ம வீட்டு சமையல்</p>
+      <h1>Every Recipe Has a Story.</h1>
+      <p>அன்போடு சமைப்போம், மகிழ்ச்சியோடு சாப்பிடுவோம்!</p>
+      <p>Discover traditional recipes made with love.</p>
+      <a class="btn" href="#recipes">Explore Recipes ↓</a>
+    </section>
+
+    <section id="recipes" class="section">
+      <p class="eyebrow">FROM OUR KITCHEN</p>
+      <h2>Our Favourite Recipes</h2>
+      <input id="search" type="search"
+        placeholder="Search recipes / சமையல் தேடுங்கள்...">
+      <div id="recipe-list" class="recipe-grid"></div>
+    </section>
+
+    <section id="assistant" class="section assistant">
+      <p class="eyebrow">YOUR COOKING FRIEND</p>
+      <h2>👩🏽‍🍳 AI Samayal Thozhan</h2>
+      <p>Un kitta irukkura ingredients sollu.
+        Enna samayal pannalaam-nu ketkalaam!</p>
+
+      <div id="chat-box" class="chat-box" aria-live="polite">
+        <p class="bot">Vanakkam! What shall we cook today? 🍲</p>
+      </div>
+
+      <form id="chat-form">
+        <textarea id="question" rows="3" required
+          placeholder="Example: En kitta egg, tomato, onion irukku..."></textarea>
+        <button class="btn" type="submit">Ask Samayal Thozhan ✨</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ in our kitchen | TasteBook</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
